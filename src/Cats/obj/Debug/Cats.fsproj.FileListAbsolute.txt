@@ -1,0 +1,4 @@
+D:\Программирование\github\CloudCats\bin\Demos.dll
+D:\Программирование\github\CloudCats\bin\Demos.pdb
+D:\Программирование\github\CloudCats\src\Demos\obj\Debug\Demos.dll
+D:\Программирование\github\CloudCats\src\Demos\obj\Debug\Demos.pdb

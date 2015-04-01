@@ -1,0 +1,2680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>MBrace.Azure.Runtime</name></assembly>
+<members>
+<member name="P:MBrace.Azure.Configuration.UserDataTable">
+<summary>
+ User data table prefix.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Configuration.UserDataContainer">
+<summary>
+ User data container prefix.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Configuration.RuntimeLogsTable">
+<summary>
+ Runtime logs table prefix.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Configuration.RuntimeTable">
+<summary>
+ Runtime table prefix.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Configuration.RuntimeContainer">
+<summary>
+ Runtime blob container prefix.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Configuration.RuntimeTopic">
+<summary>
+ Service Bus Topic prefix.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Configuration.RuntimeQueue">
+<summary>
+ Service Bus Queue prefix.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Configuration.ServiceBusConnectionString">
+<summary>
+ Service Bus connection string.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Configuration.StorageConnectionString">
+<summary>
+ Azure storage connection string.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Configuration.Id">
+<summary>
+ Runtime identifier.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Configuration.WithAppendedId">
+<summary>
+ Append Configuration.Id on all values.
+ Note : This property should not be used by clients.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Configuration.Default">
+<summary>
+ Returns an Azure Configuration with the default values.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Configuration.ConfigurationId">
+<summary>
+ Configuration identifier hash.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Configuration.WithStorageConnectionString(System.String)">
+<summary>
+ Return a new copy with altered storage connection string.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Configuration.WithServiceBusConnectionString(System.String)">
+<summary>
+ Return a new copy with altered service bus connection string.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Configuration.WithRuntimeFolders(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+<summary>
+ Return a new copy with altered runtime Queues, Containers and Tables.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Configuration.WithId(System.UInt16)">
+<summary>
+ Return a new copy with altered Id.
+</summary>
+</member>
+<member name="T:MBrace.Azure.Configuration">
+<summary>
+ Azure specific Runtime Configuration.
+</summary>
+</member>
+<member name="P:MBrace.Azure.ConfigurationId.UserDataTable">
+<summary>
+ User data table prefix.
+</summary>
+</member>
+<member name="P:MBrace.Azure.ConfigurationId.UserDataContainer">
+<summary>
+ User data container prefix.
+</summary>
+</member>
+<member name="P:MBrace.Azure.ConfigurationId.RuntimeLogsTable">
+<summary>
+ Runtime logs table prefix.
+</summary>
+</member>
+<member name="P:MBrace.Azure.ConfigurationId.RuntimeTable">
+<summary>
+ Runtime table prefix.
+</summary>
+</member>
+<member name="P:MBrace.Azure.ConfigurationId.RuntimeContainer">
+<summary>
+ Runtime blob container prefix.
+</summary>
+</member>
+<member name="P:MBrace.Azure.ConfigurationId.RuntimeTopic">
+<summary>
+ Service Bus Topic prefix.
+</summary>
+</member>
+<member name="P:MBrace.Azure.ConfigurationId.RuntimeQueue">
+<summary>
+ Service Bus Queue prefix.
+</summary>
+</member>
+<member name="P:MBrace.Azure.ConfigurationId.ServiceBusConnectionStringHash">
+<summary>
+ Service Bus connection string hash.
+</summary>
+</member>
+<member name="P:MBrace.Azure.ConfigurationId.StorageConnectionStringHash">
+<summary>
+ Azure storage connection string hash.
+</summary>
+</member>
+<member name="P:MBrace.Azure.ConfigurationId.Id">
+<summary>
+ Runtime identifier.
+</summary>
+</member>
+<member name="T:MBrace.Azure.ConfigurationId">
+<summary>
+ Configuration identifier.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:MBrace.Azure.WorkerRef.ProcessorCount">
+<summary>
+ Workers&apos; processor count.
+</summary>
+</member>
+<member name="P:MBrace.Azure.WorkerRef.ProcessName">
+<summary>
+ Host process name.
+</summary>
+</member>
+<member name="P:MBrace.Azure.WorkerRef.ProcessId">
+<summary>
+ Host process id.
+</summary>
+</member>
+<member name="P:MBrace.Azure.WorkerRef.MaxJobCount">
+<summary>
+ Worker&apos;s MaxConcurrentJobCount.
+</summary>
+</member>
+<member name="P:MBrace.Azure.WorkerRef.InitializationTime">
+<summary>
+ First worker&apos;s heartbeat time.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="P:MBrace.Azure.WorkerRef.Id">
+<summary>
+ Worker/Service Id.
+</summary>
+</member>
+<member name="P:MBrace.Azure.WorkerRef.Hostname">
+<summary>
+ Machine&apos;s name.
+</summary>
+</member>
+<member name="P:MBrace.Azure.WorkerRef.HeartbeatTime">
+<summary>
+ Last worker&apos;s heartbeat time.
+</summary>
+</member>
+<member name="P:MBrace.Azure.WorkerRef.ConfigurationHash">
+<summary>
+ Hash of worker&apos;s activated ConfigurationId.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.WorkerRef">
+<summary>
+ IWorkerRef implementation for MBrace.Azure workers.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.ConfigurationRegistry">
+<summary>
+ Holds configuration specific resources.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Init">
+<summary>
+ Common initialization for Service and AppDomains.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.InvalidConfigurationException">
+<summary>
+ Exception indicating invalid Configuration.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Job.ParentJobId">
+<summary>
+ JobId of parent Job.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Job.JobType">
+<summary>
+ Type of job.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Job.CancellationTokenSource">
+<summary>
+ Distributed cancellation token source bound to job.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Job.Econt">
+<summary>
+ Exception Continuation.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Job.FaultPolicy">
+<summary>
+ Job fault policy.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Job.StartJob">
+<summary>
+ Triggers job execution with worker-provided execution context.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Job.JobId">
+<summary>
+ Job unique identifier.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Job.ProcessInfo">
+<summary>
+ Process information record.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Job.Type">
+<summary>
+ Return type of the defining cloud workflow.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:MBrace.Azure.Runtime.Job.RunAsync(MBrace.Runtime.IDistributionProvider,MBrace.Continuation.ResourceRegistry,System.Int32,MBrace.Azure.Runtime.Job)">
+ <summary>
+     Asynchronously executes job in the local process.
+ </summary>
+ <param name="runtimeProvider">Local scheduler implementation.</param>
+ <param name="dependencies">Job dependent assemblies.</param>
+ <param name="job">Job to be executed.</param>
+</member>
+<member name="T:MBrace.Azure.Runtime.Job">
+<summary>
+ Defines a job to be executed in a worker node
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.JobEvaluatorConfiguration">
+<summary>
+ Default job configuration for use by JobEvaluator.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.JobItem">
+<summary>
+ JobQueue message type.
+</summary>
+</member>
+<member name="T:MBrace.Azure.Runtime.JobType.ChoiceAffined">
+<summary>
+ Job created by Cloud.Choice with affinity.
+</summary>
+</member>
+<member name="T:MBrace.Azure.Runtime.JobType.ParallelAffined">
+<summary>
+ Job created by Cloud.Parallel with affinity.
+</summary>
+</member>
+<member name="T:MBrace.Azure.Runtime.JobType.Choice">
+<summary>
+ Job created by Cloud.Choice.
+</summary>
+</member>
+<member name="T:MBrace.Azure.Runtime.JobType.Parallel">
+<summary>
+ Job created by Cloud.Parallel.
+</summary>
+</member>
+<member name="T:MBrace.Azure.Runtime.JobType.Affined">
+<summary>
+ Job created by Cloud.StartChild with affinity.
+</summary>
+</member>
+<member name="T:MBrace.Azure.Runtime.JobType.StartChild">
+<summary>
+ Job created by Cloud.StartChild.
+</summary>
+</member>
+<member name="T:MBrace.Azure.Runtime.JobType.Root">
+<summary>
+ Root job for process.
+</summary>
+</member>
+<member name="T:MBrace.Azure.Runtime.JobType">
+<summary>
+ Job kind.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.ProcessInfo.ChannelProvider">
+<summary>
+ Optional channel provider for this process.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.ProcessInfo.AtomProvider">
+<summary>
+ Optional atom provider for this process.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.ProcessInfo.FileStore">
+<summary>
+ Optional filestore for this process.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.ProcessInfo.DefaultChannelContainer">
+<summary>
+ Default channel container for process.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.ProcessInfo.DefaultAtomContainer">
+<summary>
+ Default atom container for process.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.ProcessInfo.DefaultDirectory">
+<summary>
+ Default file store container for process.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.ProcessInfo.Name">
+<summary>
+ Process name.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.ProcessInfo.Id">
+<summary>
+ Cloud process unique identifier.
+</summary>
+</member>
+<member name="T:MBrace.Azure.Runtime.ProcessInfo">
+<summary>
+ Process information record.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:MBrace.Azure.Runtime.RuntimeProvider.FromJob(MBrace.Azure.Runtime.RuntimeState,Microsoft.FSharp.Collections.FSharpList{Nessos.Vagabond.AssemblyId},MBrace.Azure.Runtime.Job)">
+<summary>
+ Creates a runtime provider instance for a provided job
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.RuntimeProvider">
+<summary>
+ Scheduling implementation provider
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.RuntimeState.Logger">
+<summary>
+ Runtime Logger.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.RuntimeState.WorkerManager">
+<summary>
+ Worker management.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.RuntimeState.ProcessManager">
+<summary>
+ Process management.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.RuntimeState.ResourceFactory">
+<summary>
+ Reference to the runtime resource manager
+ Used for generating latches, cancellation tokens and result cells.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.RuntimeState.AssemblyManager">
+<summary>
+ Assembly manager.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.RuntimeState.JobQueue">
+<summary>
+ Reference to the global job queue employed by the runtime
+ Queue contains pickled job and its dependencies.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.RuntimeState.TryDequeue">
+<summary>
+ Attempt to dequeue a job from the runtime job queue.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.RuntimeState.StartAsTask``1(MBrace.Azure.Runtime.ProcessInfo,Microsoft.FSharp.Collections.FSharpList{Nessos.Vagabond.AssemblyId},MBrace.Azure.Runtime.Primitives.DistributedCancellationTokenSource,MBrace.FaultPolicy,MBrace.Cloud{``0},MBrace.Azure.Runtime.JobType,System.String)">
+<summary>
+ Schedules a cloud workflow as an ICloudTask.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.RuntimeState.StartAsProcess``1(MBrace.Azure.Runtime.ProcessInfo,Microsoft.FSharp.Collections.FSharpList{Nessos.Vagabond.AssemblyId},MBrace.FaultPolicy,MBrace.Cloud{``0},MBrace.Runtime.ICloudLogger,Microsoft.FSharp.Core.FSharpOption{MBrace.ICloudCancellationToken})">
+<summary>
+ Schedules a cloud workflow as an ICloudJob.
+ Used for root-level workflows.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.RuntimeState.FromConfiguration(MBrace.Azure.Configuration)">
+<summary>
+ Initialize a new runtime state in the local process
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.RuntimeState.EnqueueJobBatch``2(MBrace.Azure.Runtime.ProcessInfo,Microsoft.FSharp.Collections.FSharpList{Nessos.Vagabond.AssemblyId},MBrace.Azure.Runtime.Primitives.DistributedCancellationTokenSource,MBrace.FaultPolicy,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{MBrace.Continuation.ExecutionContext,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit}}},Microsoft.FSharp.Core.FSharpFunc{MBrace.Continuation.ExecutionContext,Microsoft.FSharp.Core.FSharpFunc{MBrace.Continuation.ExceptionDispatchInfo,Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Core.FSharpFunc{MBrace.Continuation.ExecutionContext,Microsoft.FSharp.Core.FSharpFunc{System.OperationCanceledException,Microsoft.FSharp.Core.Unit}},System.Tuple{``1,Microsoft.FSharp.Core.FSharpOption{MBrace.IWorkerRef}}[],MBrace.Azure.Runtime.DistributionType,System.String)">
+ <summary>
+     Enqueue a batch of cloud workflows with supplied continuations to the runtime job queue.
+     Used for Parallel and Choice combinators
+ </summary>
+ <param name="dependencies">Vagrant dependency manifest.</param>
+ <param name="cts">Distributed cancellation token source.</param>
+ <param name="scFactory">Success continuation factory.</param>
+ <param name="ec">Exception continuation.</param>
+ <param name="cc">Cancellation continuation.</param>
+ <param name="wfs">Workflows</param>
+ <param name="affinity">Optional job affinity.</param>
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.RuntimeState">
+<summary>
+ Defines a handle to the state of a runtime instance.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:MBrace.Azure.Runtime.Service.UseLocalCache(System.Boolean)">
+<summary>
+ Determines if the registered local cache will be used.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Service.MaxConcurrentJobs(System.Int32)">
+<summary>
+ Get or set the maximum number of jobs that this worker may execute concurrently.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Service.Configuration(MBrace.Azure.Configuration)">
+<summary>
+ Get or set service configuration.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Service.UseLocalCache">
+<summary>
+ Determines if the registered local cache will be used.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Service.MaxConcurrentJobs">
+<summary>
+ Get or set the maximum number of jobs that this worker may execute concurrently.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Service.Id">
+<summary>
+ Get service&apos;s unique identifier.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.Service.Configuration">
+<summary>
+ Get or set service configuration.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Service.StopAsync">
+<summary>
+ Stop Service and worker loop. Wait for any pending jobs.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Service.Stop">
+<summary>
+ Stop Service and worker loop. Wait for any pending jobs.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Service.StartAsync">
+<summary>
+ Asynchronously start Service and worker loop.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Service.StartAsTask(System.Threading.CancellationToken)">
+<summary>
+ Start Service and worker loop as a Task.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Service.StartAsTask">
+<summary>
+ Start Service and worker loop as a Task.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Service.Start">
+<summary>
+ Start Service. This method is blocking until worker loop completes.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Service.RegisterStoreProvider(MBrace.Store.ICloudFileStore)">
+<summary>
+ Register an ICloudFileStore instance. Defaults to BlobStore with configuration&apos;s storage connection string.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Service.RegisterResource``1(``0)">
+<summary>
+ Add a custom resource in workers ResourceRegistry.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Service.RegisterChannelProvider(MBrace.Store.ICloudChannelProvider)">
+<summary>
+ Register an ICloudChannelProvider instance. Defaults to Service Bus queue implementation with configuration&apos;s Service Bus connection string.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Service.RegisterCache(MBrace.Store.ICloudFileStore)">
+<summary>
+ Register a local filesystem cache implementation. Defaults to FileSystemStore in local TEMP folder.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Service.RegisterAtomProvider(MBrace.Store.ICloudAtomProvider)">
+<summary>
+ Register an ICloudAtomProvider instance. Defaults to table store implementation with configuration&apos;s storage connection string.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Service.AttachLogger(MBrace.Runtime.ICloudLogger)">
+<summary>
+ Attach logger to worker.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Service.#ctor(MBrace.Azure.Configuration)">
+<summary>
+ MBrace Runtime Service.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Service">
+<summary>
+ MBrace Runtime Service.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.StaticConfiguration">
+<summary>
+ Static configuration per AppDomain.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.StoreClientProvider">
+<summary>
+ Provides Azure client instances for storage related entities
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Arguments.Config">
+<summary>
+ BASE64 serialized argument parsing schema
+</summary>
+</member>
+<member name="T:MBrace.Azure.Runtime.Arguments">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Combinators">
+
+</member>
+<member name="M:MBrace.Azure.Runtime.ConfigurationModule.DeleteRuntimeLogs(MBrace.Azure.Configuration)">
+<summary>
+ Delete RuntimeLogs table.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.ConfigurationModule.DeleteUserData(MBrace.Azure.Configuration)">
+<summary>
+ Delete UserData folder.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.ConfigurationModule.DeleteRuntimeState(MBrace.Azure.Configuration)">
+<summary>
+ Delete Runtime container and table.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.ConfigurationModule.DeleteRuntimeQueues(MBrace.Azure.Configuration)">
+<summary>
+ Delete Runtime Queue and Topic.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:MBrace.Azure.Runtime.ConfigurationModule.ActivateAsync(MBrace.Azure.Configuration)">
+<summary>
+ Activates the given configuration.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.ConfigurationModule.Initialize">
+<summary>
+ Vagabond initialization.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.ConfigurationModule.Serializer">
+<summary>
+ Default ISerializer
+</summary>
+</member>
+<member name="P:MBrace.Azure.Runtime.ConfigurationModule.Pickler">
+<summary>
+ Default Pickler.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.ConfigurationModule">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Info.NodePerformanceInfo">
+<summary>
+ Some node metrics, such as CPU, memory usage, etc
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Info.PerformanceMonitor">
+<summary>
+ Collects statistics on CPU, memory, network, etc.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:MBrace.Azure.Runtime.Primitives.DistributedCancellationTokenSource.TryElevateToDistributed">
+<summary>
+ Attempt to elevate cancellation token to global range
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:MBrace.Azure.Runtime.Primitives.DistributedCancellationTokenSource.OnDeserializing(System.Runtime.Serialization.StreamingContext)">
+<summary>
+ Triggers elevation in event of serialization
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:MBrace.Azure.Runtime.Primitives.DistributedCancellationTokenSource.ElevateCancellationToken">
+<summary>
+ Elevates cancellation token to global scope. Returns true if succesful, false if already canceled.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Primitives.DistributedCancellationTokenSource">
+<summary>
+ Distributed ICloudCancellationTokenSource implementation
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:MBrace.Azure.Runtime.Primitives.JobQueue.Create(MBrace.Azure.ConfigurationId,MBrace.Runtime.ICloudLogger)">
+<summary>
+ Yadda Yadda
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Primitives.Queue">
+<summary>
+ Queue client implementation
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Primitives.QueueMessage">
+<summary>
+ Local wrapper for Service Bus message
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Primitives.ResultCell`1">
+<summary>
+ Azure store computation result container
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Primitives.Result`1">
+<summary>
+ Cloud computation result
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Primitives.RuntimeEntity">
+<summary>
+ Base class for all process-bound runtime resources.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Primitives.Subscription">
+<summary>
+ Local queue subscription client
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Primitives.Topic">
+<summary>
+ Local queue topic client
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Primitives.CancellationTokenSourceUtils.createLocalCancellationToken(System.String,Microsoft.FSharp.Control.FSharpAsync{System.Boolean})">
+<summary>
+ creates a cancellation token that is updated by polling the token entities
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:MBrace.Azure.Runtime.Primitives.CancellationTokenSourceUtils.tryCreateTokenEntity(MBrace.Azure.ConfigurationId,System.String,Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.Tuple{System.String,System.String}})">
+<summary>
+ attempt to create a token entity; returns Some rowKey if successful or None if parent has already been canceled
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Primitives.CancellationTokenSourceUtils.checkCancellation(MBrace.Azure.ConfigurationId,System.String,System.String)">
+<summary>
+ checks if token entity is cancellation requested
+</summary>
+</member>
+<member name="M:MBrace.Azure.Runtime.Primitives.CancellationTokenSourceUtils.cancelTokenEntity(MBrace.Azure.ConfigurationId,System.String,System.String)">
+<summary>
+ cancels a distributed token entity and all its children
+</summary>
+</member>
+<member name="T:MBrace.Azure.Runtime.Primitives.CancellationTokenSourceUtils">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Primitives.Helper">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Primitives.Helpers">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.ReleaseInfo">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:MBrace.Azure.Runtime.Utilities.Convert.toBase32String(System.Byte[])">
+<summary>
+ convert bytes to base-32 string: useful for file names in case-insensitive file systems
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Utilities.Convert">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Utilities.LoggerExtensions">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Utilities.Table">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Runtime.Utilities.Utils">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:System.AssemblyVersionInformation">
+
+</member>
+</members>
+</doc>

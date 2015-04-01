@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>MBrace.Azure.Client</id>
+    <version>0.6.4-alpha</version>
+    <authors>Nick Palladinos, Kostas Rontogiannis, Eirik Tsarpalis</authors>
+    <owners>Nick Palladinos, Kostas Rontogiannis, Eirik Tsarpalis</owners>
+    <licenseUrl>https://github.com/mbraceproject/MBrace.Core/blob/master/License.md</licenseUrl>
+    <projectUrl>https://m-brace.net/</projectUrl>
+    <iconUrl>https://avatars2.githubusercontent.com/u/9674757</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A collection of standalone Azure client libraries for consumption from F# interactive.</description>
+    <summary>A collection of standalone Azure client libraries for consumption from F# interactive.</summary>
+    <releaseNotes>Update MBrace.Core libraries. Implement AppDomain isolation for user jobs. Add Standalone runtime support. Misc bugfixes and improvements.</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>F# cloud mapreduce distributed azure windowsazure</tags>
+  </metadata>
+</package>

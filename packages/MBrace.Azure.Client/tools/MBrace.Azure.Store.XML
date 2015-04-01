@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>MBrace.Azure.Store</name></assembly>
+<members>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:MBrace.Azure.Store.AtomProvider.Create(System.String)">
+ <summary>
+     Creates an Azure table store based atom provider that
+     connects to storage account with provided connection sting.
+ </summary>
+ <param name="connectionString">Azure storage account connection string.</param>
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Store.AtomProvider">
+<summary>
+ Store implementation that uses a Azure Blob Storage as backend.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Store.Atom`1">
+<summary>
+ Azure Table store CloudAtom implementation
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:MBrace.Azure.Store.BlobStore.Create(System.String)">
+ <summary>
+     Creates an MBrace blob storage interface that connects to storage account with provided connection string.
+ </summary>
+ <param name="connectionString">Azure storage account connection string.</param>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Store.BlobStore">
+<summary>
+  MBrace File Store implementation that uses Azure Blob Storage as backend.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:MBrace.Azure.Store.ChannelProvider.Create(System.String)">
+ <summary>
+     Creates an Azure Service bus queue connection string.
+ </summary>
+ <param name="connectionString">Azure service bus connection string.</param>
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Store.ChannelProvider">
+<summary>
+ MBrace Channel provider over Azure Service Bus queues
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="F:MBrace.Azure.Store.TableEntities.FatEntity.Item01@">
+<summary>
+ Max size 64KB
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:MBrace.Azure.Store.TableEntities.FatEntity.Item01(System.Byte[])">
+<summary>
+ Max size 64KB
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:MBrace.Azure.Store.TableEntities.FatEntity.Item01">
+<summary>
+ Max size 64KB
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Store.TableEntities.FatEntity">
+<summary>
+ A lightweight object for low latency communication with the azure storage.
+ Lightweight : payload size up to 15 * 64K = 960K.
+ See &apos;http://www.windowsazure.com/en-us/develop/net/how-to-guides/table-services/&apos;
+ WARNING : See the above link for any restrictions such as having a parameterless ctor,
+ and public properties.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Store.TableEntities.Table">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Store.TableEntities.TableEntityConfig">
+
+</member>
+<member name="M:MBrace.Azure.Store.Utils.getBlobRef(Microsoft.WindowsAzure.Storage.CloudStorageAccount,System.String)">
+ <summary>
+     Creates a blob reference given account and full path.
+ </summary>
+ <param name="account">Cloud storage account.</param>
+ <param name="path">Path to blob.</param>
+</member>
+<member name="M:MBrace.Azure.Store.Utils.getContainer(Microsoft.WindowsAzure.Storage.CloudStorageAccount,System.String)">
+ <summary>
+     Creates a blob storage container reference given account and container name
+ </summary>
+ <param name="account">Storage account instance.</param>
+ <param name="container">Container name</param>
+</member>
+<member name="M:MBrace.Azure.Store.Utils.getBlobClient(Microsoft.WindowsAzure.Storage.CloudStorageAccount)">
+<summary>
+ Creates a Microsoft.WindowsAzure.Storage.BlobClient instance given a cloud storage account
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:MBrace.Azure.Store.Utils.uri``1(Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,System.Uri})">
+<summary>
+ Uri formatter function
+</summary>
+</member>
+<member name="M:MBrace.Azure.Store.Utils.guid">
+<summary>
+ Generates a new guid in string form
+</summary>
+</member>
+<member name="M:MBrace.Azure.Store.Utils.Array.chunksOf``1(System.Int32,``0[])">
+ <summary>
+      Splits input array into chunks of at most chunkSize.
+ </summary>
+ <param name="chunkSize">Maximal size used by chunks</param>
+ <param name="ts">Input array.</param>
+</member>
+<member name="T:MBrace.Azure.Store.Utils.Array">
+
+</member>
+<member name="T:MBrace.Azure.Store.Utils">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:System.AssemblyVersionInformation">
+
+</member>
+</members>
+</doc>

@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>MBrace.Azure.Client</name></assembly>
+<members>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:MBrace.Azure.Client.Process.Type">
+<summary>
+ Process type.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Client.Process.TotalJobs">
+<summary>
+ Returns the number of tasks created by this process.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="P:MBrace.Azure.Client.Process.Name">
+<summary>
+ Process name.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Client.Process.InitializationTime">
+<summary>
+ Returns the initialization time for this process.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Client.Process.Id">
+<summary>
+ Process id.    
+</summary>
+</member>
+<member name="P:MBrace.Azure.Client.Process.FaultedJobs">
+<summary>
+ Returns the number of tasks failed to execute by this process.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Client.Process.ExecutionTime">
+<summary>
+ Returns the execution time for this process.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="P:MBrace.Azure.Client.Process.CompletedJobs">
+<summary>
+ Returns the number of tasks completed by this process.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Client.Process.Completed">
+<summary>
+ Returns iff the process is completed.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Client.Process.CancellationTokenSource">
+<summary>
+ Returns process&apos; CancellationTokenSource.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Client.Process.ActiveJobs">
+<summary>
+ Returns the number of tasks created by this process and are currently executing.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Client.Process.ShowLogs(Microsoft.FSharp.Core.FSharpOption{System.DateTimeOffset},Microsoft.FSharp.Core.FSharpOption{System.DateTimeOffset})">
+<summary>
+ Prints all cloud logs for this process.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Client.Process.ShowInfo">
+<summary>
+ Prints a detailed report for this process.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Client.Process.KillAsync">
+<summary>
+ Asynchronously sends a kill signal for this process.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Client.Process.Kill">
+<summary>
+ Sends a kill signal for this process.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Client.Process.GetLogsAsync(Microsoft.FSharp.Core.FSharpOption{System.DateTimeOffset},Microsoft.FSharp.Core.FSharpOption{System.DateTimeOffset})">
+<summary>
+ Asynchronously returns all cloud logs for this process.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Client.Process.GetLogs(Microsoft.FSharp.Core.FSharpOption{System.DateTimeOffset},Microsoft.FSharp.Core.FSharpOption{System.DateTimeOffset})">
+<summary>
+ Returns all cloud logs for this process.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Client.Process.AwaitResultBoxedAsync">
+<summary>
+ Asynchronously waits for the process result.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Client.Process.AwaitResultBoxed">
+<summary>
+ Awaits for the process result.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Client.Process.AwaitCompletionAsync">
+<summary>
+ Block until process record is updated. 
+ Workaround because ResultCell.SetResult and Process.SetCompleted
+ are not batched.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Client.Process">
+<summary>
+ Represents a cloud process.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:MBrace.Azure.Client.Process`1.AwaitResultAsync">
+<summary>
+ Asynchronously waits for the process result.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Client.Process`1.AwaitResult">
+<summary>
+ Awaits for the process result.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Client.Process`1">
+<summary>
+ Represents a cloud process.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:MBrace.Azure.Client.Runtime.LocalWorkerExecutable(System.String)">
+<summary>
+ Gets or sets the path for a local standalone worker executable.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Client.Runtime.LocalWorkerExecutable">
+<summary>
+ Gets or sets the path for a local standalone worker executable.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Client.Runtime.DefaultStoreClient">
+<summary>
+ Provides common methods on store related primitives.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Client.Runtime.Configuration">
+<summary>
+ Gets the runtime associated configuration.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Client.Runtime.ClientLogger">
+<summary>
+ Client logger.
+</summary>
+</member>
+<member name="P:MBrace.Azure.Client.Runtime.ClientId">
+<summary>
+ Instance identifier.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.SpawnLocal(MBrace.Azure.Configuration,System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Initialize a new local runtime instance with supplied worker count.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.ShowWorkers(Microsoft.FSharp.Core.FSharpOption{System.TimeSpan},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+ <summary>
+ Print runtime workers.
+ </summary>
+ <param name="timespan">Optional timespan. Include workers that failed to give heartbeats in this timespan.</param>
+ <param name="showInactive">Optionally include inactive workers.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.ShowProcesses">
+<summary>
+ Print all process information.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.ShowProcess(System.String)">
+ <summary>
+ Print process information for given process id.
+ </summary>
+ <param name="pid">Process Id</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.ShowLogs(System.Double,Microsoft.FSharp.Core.FSharpOption{MBrace.IWorkerRef})">
+ <summary>
+ Print runtime logs.
+ </summary>
+ <param name="worker">Get logs from specific worker.</param>
+ <param name="n">Get logs written the last n seconds.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.ShowLogs(Microsoft.FSharp.Core.FSharpOption{MBrace.IWorkerRef},Microsoft.FSharp.Core.FSharpOption{System.DateTimeOffset},Microsoft.FSharp.Core.FSharpOption{System.DateTimeOffset})">
+ <summary>
+ Print runtime logs.
+ </summary>
+ <param name="worker">Get logs from specific worker.</param>
+ <param name="fromDate">Get logs from this date.</param>
+ <param name="toDate">Get logs until this date.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.RunLocalAsync``1(MBrace.Cloud{``0},Microsoft.FSharp.Core.FSharpOption{MBrace.Runtime.ICloudLogger},Microsoft.FSharp.Core.FSharpOption{System.Threading.CancellationToken},Microsoft.FSharp.Core.FSharpOption{MBrace.FaultPolicy})">
+ <summary>
+ Execute given workflow locally using thread parallelism and await for its result.
+ </summary>
+ <param name="workflow">The workflow to execute.</param>
+ <param name="logger">Optional logger to use.</param>
+ <param name="cancellationToken">Optional cancellation token.</param>
+ <param name="faultPolicy">Optional fault policy.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.RunLocal``1(MBrace.Cloud{``0},Microsoft.FSharp.Core.FSharpOption{MBrace.Runtime.ICloudLogger},Microsoft.FSharp.Core.FSharpOption{System.Threading.CancellationToken},Microsoft.FSharp.Core.FSharpOption{MBrace.FaultPolicy})">
+ <summary>
+ Execute given workflow locally using thread parallelism and await for its result.
+ </summary>
+ <param name="workflow">The workflow to execute.</param>
+ <param name="logger">Optional logger to use.</param>
+ <param name="cancellationToken">Optional cancellation token.</param>
+ <param name="faultPolicy">Optional fault policy.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.RunAsync``1(MBrace.Cloud{``0},Microsoft.FSharp.Core.FSharpOption{MBrace.ICloudCancellationToken},Microsoft.FSharp.Core.FSharpOption{MBrace.FaultPolicy})">
+ <summary>
+     Asynchronously execute a workflow on the distributed runtime.
+ </summary>
+ <param name="workflow">Workflow to be executed.</param>
+ <param name="cancellationToken">Cancellation token for computation.</param>
+ <param name="faultPolicy">Fault policy. Defaults to infinite retries.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.RunAsTask``1(MBrace.Cloud{``0},Microsoft.FSharp.Core.FSharpOption{MBrace.ICloudCancellationToken},Microsoft.FSharp.Core.FSharpOption{MBrace.FaultPolicy})">
+ <summary>
+     Execute a workflow on the distributed runtime as task.
+ </summary>
+ <param name="workflow">Workflow to be executed.</param>
+ <param name="cancellationToken">Cancellation token for computation.</param>
+ <param name="faultPolicy">Fault policy. Defaults to infinite retries.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.Run``1(MBrace.Cloud{``0},Microsoft.FSharp.Core.FSharpOption{MBrace.ICloudCancellationToken},Microsoft.FSharp.Core.FSharpOption{MBrace.FaultPolicy})">
+ <summary>
+     Execute a workflow on the distributed runtime synchronously
+ </summary>
+ <param name="workflow">Workflow to be executed.</param>
+ <param name="cancellationToken">Cancellation token for computation.</param>
+ <param name="faultPolicy">Fault policy. Defaults to infinite retries.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.Reset(Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+ <summary>
+ Delete and re-activate runtime state.
+ Using 'Reset' may cause unexpected behavior in clients and workers.</summary>
+ Workers should be restarted manually.
+ <param name="deleteQueue">Delete runtime queues. Defaults to true.</param>
+ <param name="deleteState">Delete runtime container and table. Defaults to true.</param>
+ <param name="deleteLogs">Delete runtime logs table. Defaults to true.</param>
+ <param name="deleteUserData">Delete Configuration.UserData container and table. Defaults to true.</param>
+ <param name="reactivate">Reactivate configuration. Defaults to true.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.InitLocal(MBrace.Azure.Configuration,System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Initialize a new local runtime instance with supplied worker count and return a handle.
+</summary>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.GetWorkersAsync(Microsoft.FSharp.Core.FSharpOption{System.TimeSpan},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+ <summary>
+ Get runtime workers.
+ </summary>
+ <param name="timespan">Optional timespan. Include workers that failed to give heartbeats in this timespan.</param>
+ <param name="showInactive">Optionally include inactive workers.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.GetWorkers(Microsoft.FSharp.Core.FSharpOption{System.TimeSpan},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+ <summary>
+ Get runtime workers.
+ </summary>
+ <param name="timespan">Optional timespan. Include workers that failed to give heartbeats in this timespan.</param>
+ <param name="showInactive">Optionally include inactive workers.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.GetProcessAsync(System.String)">
+ <summary>
+ Get a process handle for given process id.
+ </summary>
+ <param name="pid">Process Id</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.GetProcess(System.String)">
+ <summary>
+ Get a process handle for given process id.
+ </summary>
+ <param name="pid">Process Id</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.GetLogsAsync(Microsoft.FSharp.Core.FSharpOption{MBrace.IWorkerRef},Microsoft.FSharp.Core.FSharpOption{System.DateTimeOffset},Microsoft.FSharp.Core.FSharpOption{System.DateTimeOffset})">
+ <summary>
+ Get runtime logs.
+ </summary>
+ <param name="worker">Get logs from specific worker.</param>
+ <param name="fromDate">Get logs from this date.</param>
+ <param name="toDate">Get logs until this date.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.GetLogs(Microsoft.FSharp.Core.FSharpOption{MBrace.IWorkerRef},Microsoft.FSharp.Core.FSharpOption{System.DateTimeOffset},Microsoft.FSharp.Core.FSharpOption{System.DateTimeOffset})">
+ <summary>
+ Get runtime logs.
+ </summary>
+ <param name="worker">Get logs from specific worker.</param>
+ <param name="fromDate">Get logs from this date.</param>
+ <param name="toDate">Get logs until this date.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.GetHandle(MBrace.Azure.Configuration,Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+ <summary>
+ Gets a handle for a remote runtime.
+ </summary>
+ <param name="config">Runtime configuration.</param>
+ <param name="waitWorkerCount">Wait until the specified number of workers join the runtime.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.CreateProcessAsync``1(MBrace.Cloud{``0},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{MBrace.Store.ICloudFileStore},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{MBrace.Store.ICloudAtomProvider},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{MBrace.Store.ICloudChannelProvider},Microsoft.FSharp.Core.FSharpOption{MBrace.ICloudCancellationToken},Microsoft.FSharp.Core.FSharpOption{MBrace.FaultPolicy})">
+ <summary>
+ Submit given workflow for execution and get a Process handle.
+ </summary>
+ <param name="workflow">The workflow to execute.</param>
+ <param name="name">Optional process name.</param>
+ <param name="defaultDirectory">Optional default directory for CloudFileStore operations.</param>
+ <param name="fileStore">Optional CloudFileStore.</param>
+ <param name="defaultAtomContainer">Optional default container for CloudAtom operations.</param>
+ <param name="atomProvider">Optional CloudAtomProvider.</param>
+ <param name="defaultChannelContainer">Optional default container for CloudChannel operations.</param>
+ <param name="channelProvider">Optional CloudChannelProvider.</param>
+ <param name="cancellationToken">Optional CloudCancellationToken.</param>
+ <param name="faultPolicy">Optional FaultPolicy. Defaults to InfiniteRetry.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.CreateProcessAsTask``1(MBrace.Cloud{``0},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{MBrace.Store.ICloudFileStore},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{MBrace.Store.ICloudAtomProvider},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{MBrace.Store.ICloudChannelProvider},Microsoft.FSharp.Core.FSharpOption{MBrace.ICloudCancellationToken},Microsoft.FSharp.Core.FSharpOption{MBrace.FaultPolicy})">
+ <summary>
+ Submit given workflow for execution and get a Process handle.
+ </summary>
+ <param name="workflow">The workflow to execute.</param>
+ <param name="name">Optional process name.</param>
+ <param name="defaultDirectory">Optional default directory for CloudFileStore operations.</param>
+ <param name="fileStore">Optional CloudFileStore.</param>
+ <param name="defaultAtomContainer">Optional default container for CloudAtom operations.</param>
+ <param name="atomProvider">Optional CloudAtomProvider.</param>
+ <param name="defaultChannelContainer">Optional default container for CloudChannel operations.</param>
+ <param name="channelProvider">Optional CloudChannelProvider.</param>
+ <param name="cancellationToken">Optional CloudCancellationToken.</param>
+ <param name="faultPolicy">Optional FaultPolicy. Defaults to InfiniteRetry.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.CreateProcess``1(MBrace.Cloud{``0},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{MBrace.Store.ICloudFileStore},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{MBrace.Store.ICloudAtomProvider},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{MBrace.Store.ICloudChannelProvider},Microsoft.FSharp.Core.FSharpOption{MBrace.ICloudCancellationToken},Microsoft.FSharp.Core.FSharpOption{MBrace.FaultPolicy})">
+ <summary>
+ Submit given workflow for execution and get a Process handle.
+ </summary>
+ <param name="workflow">The workflow to execute.</param>
+ <param name="name">Optional process name.</param>
+ <param name="defaultDirectory">Optional default directory for CloudFileStore operations.</param>
+ <param name="fileStore">Optional CloudFileStore.</param>
+ <param name="defaultAtomContainer">Optional default container for CloudAtom operations.</param>
+ <param name="atomProvider">Optional CloudAtomProvider.</param>
+ <param name="defaultChannelContainer">Optional default container for CloudChannel operations.</param>
+ <param name="channelProvider">Optional CloudChannelProvider.</param>
+ <param name="cancellationToken">Optional CloudCancellationToken.</param>
+ <param name="faultPolicy">Optional FaultPolicy. Defaults to InfiniteRetry.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.CreateCancellationTokenSource">
+ <summary>
+ Creates a fresh CloudCancellationTokenSource for this runtime.
+ </summary>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.ClearProcessAsync(System.String,Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+ <summary>
+ Delete runtime records for given process.
+ </summary>
+ <param name="pid">Process Id.</param>
+ <param name="fullClear">Delete all records and blobs used by this process. Defaults to true.</param>
+ <param name="force">Force deletion on not completed processes.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.ClearProcess(System.String,Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+ <summary>
+ Delete runtime records for given process.
+ </summary>
+ <param name="pid">Process Id.</param>
+ <param name="fullClear">Delete all records and blobs used by this process. Defaults to true.</param>
+ <param name="force">Force deletion on not completed processes.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.ClearAllProcessesAsync(Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+ <summary>
+ Delete runtime records for all processes.
+ </summary>
+ <param name="fullClear">Delete all records and blobs used by this process.Defaults to true.</param>
+ <param name="force">Force deletion on not completed processes.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.ClearAllProcesses(Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+ <summary>
+ Delete runtime records for all processes.
+ </summary>
+ <param name="fullClear">Delete all records and blobs used by this process.Defaults to true.</param>
+ <param name="force">Force deletion on not completed processes.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.AttachLocalWorker(Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+ <summary>
+     Attaches a local worker to the cluster instance.
+ </summary>
+ <param name="workerCount">Local workers to be spawned. Defaults to 1.</param>
+ <param name="maxTasks">Maximum tasks for worker. Defaults to local core count.</param>
+</member>
+<member name="M:MBrace.Azure.Client.Runtime.AttachClientLogger(MBrace.Runtime.ICloudLogger)">
+<summary>
+ Attach given logger to ClientLogger.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Client.Runtime">
+ <summary>
+ Windows Azure Runtime client.
+ </summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:MBrace.Azure.Client.Utils">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:System.AssemblyVersionInformation">
+
+</member>
+</members>
+</doc>

@@ -1,0 +1,4 @@
+D:\LenaNetFringe\bin\Demos.dll
+D:\LenaNetFringe\bin\Demos.pdb
+D:\LenaNetFringe\src\Demos\obj\Debug\Demos.dll
+D:\LenaNetFringe\src\Demos\obj\Debug\Demos.pdb

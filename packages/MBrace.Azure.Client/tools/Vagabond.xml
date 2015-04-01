@@ -1,0 +1,1550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>Vagabond</name></assembly>
+<members>
+<member name="P:Nessos.Vagabond.AssemblyId.ImageHash">
+<summary>
+ digest of the raw assembly image
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AssemblyId.FullName">
+<summary>
+ assembly qualified name
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.AssemblyId">
+<summary>
+ unique identifier for assembly
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.AssemblyLoadInfo">
+<summary>
+ Assembly load information
+</summary>
+</member>
+<member name="F:Nessos.Vagabond.AssemblyLoadPolicy.CacheOnly">
+<summary>
+ Assemblies are to be cached only, not loaded in AppDomain
+</summary>
+</member>
+<member name="F:Nessos.Vagabond.AssemblyLoadPolicy.RequireIdentical">
+<summary>
+ If assembly is to be resolved locally, then it should have identical SHA256 hashcode.
+</summary>
+</member>
+<member name="F:Nessos.Vagabond.AssemblyLoadPolicy.ResolveAll">
+<summary>
+ All assembly names can be looked up by runtime
+</summary>
+</member>
+<member name="F:Nessos.Vagabond.AssemblyLoadPolicy.ResolveStrongNames">
+<summary>
+ Only signed assemblies should be looked up by runtime
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.AssemblyLoadPolicy">
+<summary>
+ Specifies what assemblies are to be loaded 
+ locally by the runtime if possible.
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AssemblyPackage.StaticInitializer">
+<summary>
+ Static initialization data
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AssemblyPackage.Symbols">
+<summary>
+ Symbols file
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AssemblyPackage.Image">
+<summary>
+ Raw image of the assembly
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.AssemblyPackage">
+<summary>
+ Contains information necessary for the exportation of an assembly
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.FsiDynamicAssemblyProfile">
+<summary>
+ Dynamic Assembly profile for F# Interactive
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.IDynamicAssemblyProfile.Description">
+<summary>
+ a short description of the profile
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.IDynamicAssemblyProfile.PickleStaticField(System.Reflection.FieldInfo,System.Boolean)">
+<summary>
+ Specifies if static field is to be pickled
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.IDynamicAssemblyProfile.IsPartiallyEvaluatedSlice(Microsoft.FSharp.Core.FSharpFunc{System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.Assembly}},System.Reflection.Assembly)">
+<summary>
+ Decides if given slices requires fresh evaluation of assemblies
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.IDynamicAssemblyProfile.IsMatch(System.Reflection.Assembly)">
+<summary>
+ identifies dynamic assemblies that match this profile
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.IDynamicAssemblyProfile.EraseType(System.Type)">
+<summary>
+ Specifies if type is to be erased from slices
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.IDynamicAssemblyProfile.EraseStaticConstructor(System.Type)">
+<summary>
+ Specifies if static constructor is to be erased
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.IDynamicAssemblyProfile.AlwaysIncludeType(System.Type)">
+<summary>
+ Specifies if type is to be included in every iteration of the slice
+</summary>
+</member>
+<member name="T:Nessos.Vagabond.IDynamicAssemblyProfile">
+<summary>
+ customizes slicing behaviour on given dynamic assembly
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Nessos.Vagabond.StaticInitializationInfo.Errors">
+<summary>
+ Static initialization errors
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.StaticInitializationInfo.IsPartial">
+<summary>
+ Is partial static initialization data
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.StaticInitializationInfo.Generation">
+<summary>
+ Generation of given static initializer
+</summary>
+</member>
+<member name="T:Nessos.Vagabond.StaticInitializationInfo">
+<summary>
+ Static initialization metadata
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.StaticInitializer.IsPartial">
+<summary>
+ Is partial static initialization data
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.StaticInitializer.Data">
+<summary>
+ Static initialization data
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.StaticInitializer.Generation">
+<summary>
+ Generation of given static initializer
+</summary>
+</member>
+<member name="T:Nessos.Vagabond.StaticInitializer">
+<summary>
+ static initialization data for assembly package
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Nessos.Vagabond.Vagabond.DefaultLoadPolicy(Nessos.Vagabond.AssemblyLoadPolicy)">
+<summary>
+ Default load policy 
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.Vagabond.UUId">
+<summary>
+ Unique identifier for the slice compiler
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.Vagabond.TypeConverter">
+<summary>
+ FsPickler type name converter for use with other formats
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.Vagabond.Pickler">
+<summary>
+ Returns the pickler used by the slice compiler
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.Vagabond.DefaultLoadPolicy">
+<summary>
+ Default load policy 
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.Vagabond.CachePath">
+<summary>
+ Cache directory used by Vagabond
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.TryGetSliceOfType(System.Type)">
+ <summary>
+     Returns the dynamic assembly slice corresponding to the given type, if exists.
+ </summary>
+ <param name="t">input type.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.ResolveDynamicDependenciesRequiringCompilation(System.Object)">
+ <summary>
+     Returns a list of dynamic assemblies that require slice compilation
+     for the given object graph to be exportable.
+ </summary>
+ <param name="obj">any object graph</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.LoadCachedAssembly(Nessos.Vagabond.AssemblyId,Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.AssemblyLoadPolicy})">
+ <summary>
+     Loads an assembly that is already cached in local machine.
+ </summary>
+ <param name="id">input assembly id.</param>
+ <param name="loadPolicy">Specifies assembly resolution policy. Defaults to resolving strong names only.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.LoadCachedAssemblies(System.Collections.Generic.IEnumerable{Nessos.Vagabond.AssemblyId},Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.AssemblyLoadPolicy})">
+ <summary>
+     Loads assembly id's that are already cached in local machine.
+ </summary>
+ <param name="id">input assembly id.</param>
+ <param name="loadPolicy">Specifies assembly resolution policy. Defaults to resolving strong names only.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.LoadAssemblyPackages(System.Collections.Generic.IEnumerable{Nessos.Vagabond.AssemblyPackage},Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.AssemblyLoadPolicy})">
+ <summary>
+     Loads assembly packages to the local machine.
+ </summary>
+ <param name="pas">Input assembly packages.</param>
+ <param name="loadPolicy">Specifies assembly resolution policy. Defaults to resolving strong names only.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.LoadAssemblyPackage(Nessos.Vagabond.AssemblyPackage,Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.AssemblyLoadPolicy})">
+ <summary>
+     Loads assembly package to the local machine.
+ </summary>
+ <param name="pa">Input assembly package.</param>
+ <param name="loadPolicy">Specifies assembly resolution policy. Defaults to resolving strong names only.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.IsLocalDynamicAssemblySlice(Nessos.Vagabond.AssemblyId)">
+ <summary>
+     Checks if assembly id is a locally generated dynamic assembly slice.
+ </summary>
+ <param name="id">input assembly id.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.Initialize(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Nessos.Vagabond.IDynamicAssemblyProfile}},Microsoft.FSharp.Core.FSharpOption{Nessos.FsPickler.ITypeNameConverter},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.AssemblyLoadPolicy})">
+ <summary>
+     Initializes a new Vagabond instance.
+ </summary>
+ <param name="ignoredAssemblies">Ignore assemblies and their dependencies.</param>
+ <param name="cacheDirectory">Temp folder used for assembly compilation and caching. Defaults to system temp folder.</param>
+ <param name="profiles">Dynamic assembly configuration profiles.</param>
+ <param name="typeConverter">FsPickler type name converter.</param>
+ <param name="requireLoadedInAppDomain">
+     Demand all transitive dependencies be loadable in current AppDomain.
+     If unset, only loaded assemblies are listed as dependencies. Defaults to true.
+ </param>
+ <param name="loadPolicy">Default assembly load policy.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.Initialize(Microsoft.FSharp.Core.FSharpOption{System.String},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Nessos.Vagabond.IDynamicAssemblyProfile}},Microsoft.FSharp.Core.FSharpOption{Nessos.FsPickler.ITypeNameConverter},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Reflection.Assembly,System.Boolean}},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.AssemblyLoadPolicy})">
+ <summary>
+     Initializes a new Vagabond instance.
+ </summary>
+ <param name="cacheDirectory">Temp folder used for assembly compilation and caching. Defaults to system temp folder.</param>
+ <param name="profiles">Dynamic assembly configuration profiles.</param>
+ <param name="typeConverter">FsPickler type name converter.</param>
+ <param name="isIgnoredAssembly">User-defined assembly ignore predicate.</param>
+ <param name="requireLoadedInAppDomain">
+     Demand all transitive dependencies be loadable in current AppDomain.
+     If unset, only loaded assemblies are listed as dependencies. Defaults to true.
+ </param>
+ <param name="loadPolicy">Default assembly load policy.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.GetDynamicAssemblySlices(System.Reflection.Assembly)">
+ <summary>
+     Returns *all* assembly slices of given dynamic assembly.
+ </summary>
+ <param name="assembly">a dynamic assembly.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.GetAssemblyLoadInfo(System.Collections.Generic.IEnumerable{Nessos.Vagabond.AssemblyId},Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.AssemblyLoadPolicy})">
+ <summary>
+     Gets the local assembly load info for given assembly ids.
+ </summary>
+ <param name="ids">Given assembly ids.</param>
+ <param name="loadPolicy">Specifies assembly resolution policy. Defaults to resolving strong names only.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.GetAssemblyLoadInfo(Nessos.Vagabond.AssemblyId,Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.AssemblyLoadPolicy})">
+ <summary>
+     Gets the local assembly load info for given assembly id.
+ </summary>
+ <param name="id">Given assembly id.</param>
+ <param name="loadPolicy">Specifies assembly resolution policy. Defaults to resolving strong names only.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.CreateAssemblyPackages(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Boolean,Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.AssemblyLoadPolicy})">
+ <summary>
+     Creates assembly packages out of given assemblies.
+ </summary>
+ <param name="assemblies">Inputs assemblies.</param>
+ <param name="includeAssemblyImage">Include raw assembly image in the bundle.</param>
+ <param name="loadPolicy">Specifies assembly resolution policy. Defaults to resolving strong names only.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.CreateAssemblyPackages(System.Collections.Generic.IEnumerable{Nessos.Vagabond.AssemblyId},System.Boolean,Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.AssemblyLoadPolicy})">
+ <summary>
+     Creates assembly packages out of given assembly ids.
+ </summary>
+ <param name="ids"></param>
+ <param name="includeAssemblyImage">Include raw assembly image in the bundle.</param>
+ <param name="loadPolicy">Specifies assembly resolution policy. Defaults to resolving strong names only.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.CreateAssemblyPackage(System.Reflection.Assembly,System.Boolean)">
+ <summary>
+     Builds an assembly package bundle for given input.
+ </summary>
+ <param name="assembly">Given assembly.</param>
+ <param name="includeAssemblyImage">Include raw assembly image in the bundle.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.CreateAssemblyPackage(Nessos.Vagabond.AssemblyId,System.Boolean,Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.AssemblyLoadPolicy})">
+ <summary>
+     Creates an assembly package out of a given assembly id.
+ </summary>
+ <param name="id">assembly id</param>
+ <param name="includeAssemblyImage">include assembly image in assembly package.</param>
+ <param name="loadPolicy">Specifies assembly resolution policy. Defaults to strong names only.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.ComputeObjectDependencies(System.Object,Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+ <summary>
+     Returns a collection of all assemblies that the given object depends on.
+     Dynamic assemblies are substituted for their corresponding static slices.
+ </summary>
+ <param name="obj">A given object graph</param>
+ <param name="permitCompilation">Compile new slices as required. Defaults to false.</param>
+</member>
+<member name="M:Nessos.Vagabond.Vagabond.CompileDynamicAssemblySlice(System.Reflection.Assembly)">
+ <summary>
+     Compiles slices for given dynamic assembly, if required.
+ </summary>
+ <param name="assembly">a dynamic assembly</param>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.Vagabond">
+<summary>
+ Vagabond Object which instantiates a dynamic assembly compiler, loader and exporter state
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.VagabondException">
+<summary>
+ Exception raised by Vagabond
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.AppDomainEvaluatorPool.MinDomains">
+<summary>
+ Minimum allowed AppDomain count
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.AppDomainEvaluatorPool.MaxDomains">
+<summary>
+ Maximum allowed AppDomain count
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.AppDomainEvaluatorPool.DomainCount">
+<summary>
+ Current AppDomain count
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.AppDomainEvaluatorPool.EvaluateAsync``1(System.Collections.Generic.IEnumerable{Nessos.Vagabond.AssemblyId},Microsoft.FSharp.Control.FSharpAsync{``0})">
+ <summary>
+     Asynchronously evaluates function in pooled AppDomain. AppDomain will be selected based on dependency affinity.
+ </summary>
+ <param name="dependencies">Dependencies for operation.</param>
+ <param name="f">Asynchronous workflow to be executed.</param>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.AppDomainEvaluatorPool.Evaluate``1(System.Collections.Generic.IEnumerable{Nessos.Vagabond.AssemblyId},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,``0})">
+ <summary>
+     Evaluates function in pooled AppDomain. AppDomain will be selected based on dependency affinity.
+ </summary>
+ <param name="dependencies">Dependencies for operation.</param>
+ <param name="f">Function to be executed.</param>
+</member>
+<member name="">
+
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.AppDomainEvaluatorPool.Create(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.TimeSpan},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+ <summary>
+     Creates a new AppDomainEvaluator instance.
+ </summary>
+ <param name="appDomainInitializer">Initializer run on every AppDomain upon creation. Defaults to none.</param>
+ <param name="minimumConcurrentDomains">Minimum allowed AppDomains. Defaults to 3.</param>
+ <param name="maximumConcurrentDomains">Maximum allowed AppDomains. Defaults to 20.</param>
+ <param name="threshold">TimeSpan after which unused AppDomains may get unloaded. Defaults to infinite.</param>
+ <param name="maxTasksPerDomain">Maximum number of tasks allowed per domain. Defaults to infinite.</param>
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.AppDomainPool.AppDomainEvaluatorPool">
+<summary>
+ Defines an app domain pool that evaluates code based on Vagabond dependency affinities
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.AppDomainPool.AppDomainPool">
+<summary>
+ Provides an AppDomain pooling mechanism for use by Vagabond.
+ AppDomains are managed based what assembly dependencies are required for execution.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.AppDomainPool`1.MinDomains">
+<summary>
+ Minimum AppDomain count
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.AppDomainPool`1.MaxDomains">
+<summary>
+ Maximum AppDomain count
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.AppDomainPool`1.DomainCount">
+<summary>
+ Current AppDomain count
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.AppDomainPool`1.RequestAppDomain(System.Collections.Generic.IEnumerable{Nessos.Vagabond.AssemblyId})">
+ <summary>
+     Returns a marshalled Manager object attached to a pooled AppDomain instance.
+     AppDomain will be selected based on dependency affinity.
+ </summary>
+ <param name="dependencies">Assembly dependencies required of AppDomain.</param>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.AppDomainPool.AppDomainPool`1">
+<summary>
+ Provides an AppDomain pooling mechanism for use by Vagabond.
+ AppDomains are managed based what assembly dependencies are required for execution.
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.IAppDomainManager.TaskCount">
+<summary>
+ Gets the number of tasks currently active in the AppDomain. 
+ AppDomains with non-zero task count will never be unloaded
+ by the AppDomainPool.
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.IAppDomainManager.LastUsed">
+<summary>
+ Gets the last time this app domain instance was used.
+ Used by the AppDomainPool to unload unused instances.
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.IAppDomainManager.Initialize(Nessos.Vagabond.AppDomainPool.IAppDomainConfiguration)">
+<summary>
+ AppDomain initializer method.
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.IAppDomainManager.Finalize">
+<summary>
+ AppDomain finalization method.
+</summary>
+</member>
+<member name="T:Nessos.Vagabond.AppDomainPool.IAppDomainManager">
+<summary>
+ Interface implemented by MarshalByRef types
+ used for managing Application domains.
+ Types implementing the interface must carry
+ a parameterless constructor.
+</summary>
+</member>
+<member name="T:Nessos.Vagabond.AppDomainPool.IAppDomainConfiguration">
+<summary>
+ User-defined configuration object
+ passed at AppDomain initialization
+ Values are instantiated on the client appdomain
+ and marshalled to the pooled domains
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.EvaluatorImpl.AppDomainEvaluatorManager.EvaluateSync(Nessos.FsPickler.ExtensionMethods.Pickle{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,System.Object}})">
+<summary>
+ Synchronously executes a computation in remote AppDomain
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.EvaluatorImpl.AppDomainEvaluatorManager.EvaluateAsync(Nessos.Vagabond.AppDomainPool.EvaluatorImpl.MarshalledTaskCompletionSource{Nessos.FsPickler.ExtensionMethods.Pickle{Nessos.Vagabond.Utils.Exn{System.Object}}},Nessos.FsPickler.ExtensionMethods.Pickle{Microsoft.FSharp.Control.FSharpAsync{System.Object}})">
+<summary>
+ Asynchronously executes a computation in remote AppDomain
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.AppDomainPool.EvaluatorImpl.AppDomainEvaluatorManager">
+<summary>
+ AppDomain managing object
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.AppDomainPool.EvaluatorImpl.AppDomainEvaluatorConfiguration">
+<summary>
+ AppDomain configuration that carries a pickled initializer
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.EvaluatorImpl.MarshalledCancellationTokenSource.CancellationToken">
+<summary>
+ Gets the local cancellation token
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.EvaluatorImpl.MarshalledCancellationTokenSource.Cancel">
+<summary>
+ Cancel the cancellation token source
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.AppDomainPool.EvaluatorImpl.MarshalledCancellationTokenSource">
+<summary>
+ Marshalled cancellation token source for use over AppDomains
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.EvaluatorImpl.MarshalledTaskCompletionSource`1.Task">
+<summary>
+ Gets the local task instance.
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.EvaluatorImpl.MarshalledTaskCompletionSource`1.SetResult(`0)">
+<summary>
+ Set a value as task result
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.EvaluatorImpl.MarshalledTaskCompletionSource`1.SetException(System.Exception)">
+<summary>
+ Set an exception as task result
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.EvaluatorImpl.MarshalledTaskCompletionSource`1.SetCanceled">
+<summary>
+ Cancels the task
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.AppDomainPool.EvaluatorImpl.MarshalledTaskCompletionSource`1">
+<summary>
+ Marshalled task completion source for async computation over AppDomains
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.AppDomainPool.EvaluatorImpl">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolInfo`1.UnloadThreshold">
+<summary>
+ Unload threshold: minimum timespan needed for unloading unused domains
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolInfo`1.Configuration">
+<summary>
+ User-specified configuration for the AppDomain
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolInfo`1.MaxTasksPerDomain">
+<summary>
+ Max tasks allowed per domain
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolInfo`1.MinConcurrentDomains">
+<summary>
+ Minimum concurrent domains
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolInfo`1.MaxConcurrentDomains">
+<summary>
+ Maximum concurrent domains
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolInfo`1.DomainPool">
+<summary>
+ Application domain pool
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolInfo`1.Init``1(System.Int32,System.Int32,Nessos.Vagabond.AppDomainPool.IAppDomainConfiguration,Microsoft.FSharp.Core.FSharpOption{System.TimeSpan},Microsoft.FSharp.Core.FSharpOption{System.Int32})">
+<summary>
+ Initialize a new AppDomain pool state
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolInfo`1.AddNew(Microsoft.FSharp.Core.FSharpOption{System.Collections.Generic.IEnumerable{Nessos.Vagabond.AssemblyId}})">
+<summary>
+ Initialize a new AppDomain with provided dependencies and add to state
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolInfo`1.AddDomain(Nessos.Vagabond.AppDomainPool.Impl.AppDomainLoadInfo{`0})">
+<summary>
+ Add existing or updated AppDomain info to state
+</summary>
+</member>
+<member name="T:Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolInfo`1">
+<summary>
+ Globad AppDomain load state
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.Impl.AppDomainLoadInfo`1.Dependencies">
+<summary>
+ Declared Vagabond dependency load state
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.Impl.AppDomainLoadInfo`1.Manager">
+<summary>
+ AppDomain manager instance
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.Impl.AppDomainLoadInfo`1.AppDomain">
+<summary>
+ AppDomain instance
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.AppDomainPool.Impl.AppDomainLoadInfo`1.Id">
+<summary>
+ AppDomain identifier
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.Impl.AppDomainLoadInfo`1.Init(Nessos.Vagabond.AppDomainPool.IAppDomainConfiguration,Microsoft.FSharp.Core.FSharpOption{System.Collections.Generic.IEnumerable{Nessos.Vagabond.AssemblyId}})">
+<summary>
+ Initialize an AppDomain instance with given Vagabond dependencies
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.AppDomainPool.Impl.AppDomainLoadInfo`1">
+<summary>
+ Application Domain load state
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.Impl.behaviour``2(Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolInfo{``0}},Microsoft.FSharp.Control.FSharpMailboxProcessor{Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolMsg{``0}})">
+<summary>
+ AppDomainManager actor behaviour
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.Impl.getMatchingAppDomain``1(Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolInfo{``0},Nessos.Vagabond.AssemblyId[])">
+<summary>
+ get an Application domain appropriate for provided dependencies
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.Impl.cleanupDomains``1(System.Int32,Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolInfo{``0})">
+ <summary>
+     clean up state from AppDomains needing removal.
+ </summary>
+ <param name="minRemovals">Minimum removals required for success.</param>
+ <param name="state">Input state.</param>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.Impl.disposeDomains``1(System.Collections.Generic.IEnumerable{Nessos.Vagabond.AppDomainPool.Impl.AppDomainLoadInfo{``0}})">
+<summary>
+ unloads provided application domains
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.Impl.tryGetMatchingAppDomain``1(Nessos.Vagabond.AppDomainPool.Impl.AppDomainPoolInfo{``0},Nessos.Vagabond.AssemblyId[])">
+<summary>
+ try locating an AppDomain from pool that is compatible with supplied dependencies.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Nessos.Vagabond.AppDomainPool.Impl.initAppDomain(System.String)">
+<summary>
+ initialize a new AppDomain with given friendly name
+</summary>
+</member>
+<member name="T:Nessos.Vagabond.AppDomainPool.Impl">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.AssemblyCache">
+
+</member>
+<member name="P:Nessos.Vagabond.AssemblyManagement.VagabondState.RequireDependenciesLoadedInAppDomain">
+<summary>
+ result in failure if any of the listed transitive
+ cannot be loaded in the local AppDomain.
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Nessos.Vagabond.AssemblyManagement.exportAssembly(Nessos.Vagabond.AssemblyManagement.VagabondState,Nessos.Vagabond.AssemblyLoadPolicy,System.Boolean,Nessos.Vagabond.AssemblyId)">
+<summary>
+ exports an assembly package
+
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.AssemblyManagement.registerAssemblyResolutionHandler">
+<summary>
+ registers an assembly resolution handler based on AppDomain lookups;
+ this is needed since assembly lookups often fail when loaded at runtime.
+</summary>
+</member>
+<member name="T:Nessos.Vagabond.AssemblyManagement">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Nessos.Vagabond.AssemblyParser.parseDynamicAssemblySlice(Nessos.Vagabond.SliceCompilerTypes.DynamicAssemblyCompilerState,System.Reflection.Assembly)">
+<summary>
+ the main assembly parsing method
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Nessos.Vagabond.AssemblyParser.computeSliceData(Nessos.Vagabond.SliceCompilerTypes.DynamicAssemblyState)">
+<summary>
+ traverses a dynamic assembly and compiles and index of parse information
+ to be used for the assembly parser configuration
+</summary>
+</member>
+<member name="T:Nessos.Vagabond.AssemblyParser">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.Daemon">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Nessos.Vagabond.DependencyAnalysis.remapDependencies(Microsoft.FSharp.Core.FSharpFunc{System.Reflection.Assembly,System.Boolean},System.Boolean,Nessos.Vagabond.SliceCompilerTypes.DynamicAssemblyCompilerState,Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.Reflection.Assembly,System.Collections.Generic.IEnumerable{System.Type}}})">
+<summary>
+ reassigns assemblies so that the correct assembly slices are matched
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.DependencyAnalysis.getDynamicDependenciesRequiringCompilation(Nessos.Vagabond.SliceCompilerTypes.DynamicAssemblyCompilerState,Microsoft.FSharp.Collections.FSharpList{System.Tuple{System.Reflection.Assembly,System.Collections.Generic.IEnumerable{System.Type}}})">
+<summary>
+ determines the assemblies that require slice compilation based on given dependency input
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:Nessos.Vagabond.DependencyAnalysis.parseDynamicAssemblies(Microsoft.FSharp.Core.FSharpFunc{System.Reflection.Assembly,System.Boolean},System.Boolean,Nessos.Vagabond.SliceCompilerTypes.DynamicAssemblyCompilerState,System.Collections.Generic.IEnumerable{System.Reflection.Assembly})">
+<summary>
+ parse a collection of assemblies, identify the dynamic assemblies that require slice compilation
+ the dynamic assemblies are then parsed to Cecil and sorted topologically for correct compilation order.
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.DependencyAnalysis.traverseDependencies(Microsoft.FSharp.Core.FSharpFunc{System.Reflection.Assembly,System.Boolean},System.Boolean,Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.SliceCompilerTypes.DynamicAssemblyCompilerState},System.Collections.Generic.IEnumerable{System.Reflection.Assembly})">
+<summary>
+ recursively traverse assembly dependency graph
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.DependencyAnalysis.tryResolveAssembly(Microsoft.FSharp.Core.FSharpFunc{System.Reflection.Assembly,System.Boolean},System.Boolean,Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.SliceCompilerTypes.DynamicAssemblyCompilerState},System.String)">
+<summary>
+ locally resolve an assembly by qualified name
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.DependencyAnalysis.isIgnoredAssembly">
+<summary>
+ assemblies ignored by Vagabond during assembly traversal
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.DependencyAnalysis">
+
+</member>
+<member name="M:Nessos.Vagabond.Extras.Utilities.ComputeTypeDependencies(System.Object)">
+ <summary>
+     Returns all type instances that appear in given object graph.
+ </summary>
+ <param name="obj">object graph to be traversed</param>
+</member>
+<member name="M:Nessos.Vagabond.Extras.Utilities.ComputeAssemblyId(System.Reflection.Assembly)">
+ <summary>
+     Computes a unique id for given static assembly.
+ </summary>
+ <param name="assembly">a static assembly.</param>
+</member>
+<member name="M:Nessos.Vagabond.Extras.Utilities.ComputeAssemblyDependencies(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Reflection.Assembly,System.Boolean}},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+ <summary>
+     Resolves all assembly dependencies of given assemblies.
+ </summary>
+ <param name="assemblies"></param>
+ <param name="isIgnoredAssembly">User-defined assembly ignore predicate.</param>
+ <param name="requireLoadedInAppDomain">
+     Demand all transitive dependencies be loadable in current AppDomain.
+     If unset, only loaded assemblies are listed as dependencies. Defaults to true.
+ </param>
+</member>
+<member name="M:Nessos.Vagabond.Extras.Utilities.ComputeAssemblyDependencies(System.Reflection.Assembly,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Reflection.Assembly,System.Boolean}},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+ <summary>
+     Resolves all assembly dependencies of given assembly.
+ </summary>
+ <param name="assembly">assembly to be traversed</param>
+ <param name="isIgnoredAssembly">User-defined assembly ignore predicate.</param>
+ <param name="requireLoadedInAppDomain">
+     Demand all transitive dependencies be loadable in current AppDomain.
+     If unset, only loaded assemblies are listed as dependencies. Defaults to true.
+ </param>
+</member>
+<member name="M:Nessos.Vagabond.Extras.Utilities.ComputeAssemblyDependencies(System.Object,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.Reflection.Assembly,System.Boolean}},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+ <summary>
+     Resolves all assembly dependencies of given object graph.
+ </summary>
+ <param name="obj">object graph to be traversed</param>
+ <param name="isIgnoredAssembly">User-defined assembly ignore predicate.</param>
+ <param name="requireLoadedInAppDomain">
+     Demand all transitive dependencies be loadable in current AppDomain.
+     If unset, only loaded assemblies are listed as dependencies. Defaults to true.
+ </param>
+</member>
+<member name="T:Nessos.Vagabond.Extras.Utilities">
+ <summary>
+     A collection of general purpose utilities on dependency traversal.
+ </summary>
+</member>
+<member name="M:Nessos.Vagabond.Extras.IRemoteAssemblyPublisher.PullAssemblies(Microsoft.FSharp.Collections.FSharpList{Nessos.Vagabond.AssemblyId})">
+<summary>
+ request assembly packages from publisher
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.Extras.IRemoteAssemblyPublisher.GetRequiredAssemblyInfo">
+<summary>
+ receives a collection of dependencies required by remote publisher
+</summary>
+</member>
+<member name="T:Nessos.Vagabond.Extras.IRemoteAssemblyPublisher">
+<summary>
+ Defines an abstract assembly exporter; to be used by VagabondClient
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.Extras.IRemoteAssemblyReceiver.PushAssemblies(Microsoft.FSharp.Collections.FSharpList{Nessos.Vagabond.AssemblyPackage})">
+<summary>
+ upload a set of assembly packages to the remote party
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.Extras.IRemoteAssemblyReceiver.GetLoadedAssemblyInfo(Microsoft.FSharp.Collections.FSharpList{Nessos.Vagabond.AssemblyId})">
+<summary>
+ receives the assembly load state of the remote party for the given id&apos;s
+</summary>
+</member>
+<member name="T:Nessos.Vagabond.Extras.IRemoteAssemblyReceiver">
+<summary>
+ Defines an abstract assembly load target; to be used by VagabondServer
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.Extras.Vagabond.ReceiveDependencies(Nessos.Vagabond.Vagabond,Nessos.Vagabond.Extras.IRemoteAssemblyPublisher,Microsoft.FSharp.Core.FSharpOption{Nessos.Vagabond.AssemblyLoadPolicy})">
+ <summary>
+     Receive dependencies as supplied by the remote assembly publisher
+ </summary>
+ <param name="publisher">The remote publisher</param>
+ <param name="loadPolicy">Specifies local assembly resolution policy. Defaults to strong names only.</param>
+</member>
+<member name="M:Nessos.Vagabond.Extras.Vagabond.SubmitObjectDependencies(Nessos.Vagabond.Vagabond,Nessos.Vagabond.Extras.IRemoteAssemblyReceiver,System.Object,Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
+ <summary>
+     Apply the built-in assembly distribution protocol using user-defined function.
+ </summary>
+ <param name="receiver">User provided assembly submit operation.</param>
+ <param name="obj">Object, whose dependent assemblies are to be exported.</param>
+ <param name="permitCompilation">Compile dynamic assemblies in the background, as required. Defaults to false.</param>
+</member>
+<member name="M:Nessos.Vagabond.Extras.Vagabond.SubmitAssemblies(Nessos.Vagabond.Vagabond,Nessos.Vagabond.Extras.IRemoteAssemblyReceiver,System.Collections.Generic.IEnumerable{System.Reflection.Assembly})">
+ <summary>
+     Apply a built-in assembly distribution protocol using a user-defined submit function.
+ </summary>
+ <param name="receiver">User provided assembly submit operation.</param>
+ <param name="assemblies">Assemblies to be exported.</param>
+</member>
+<member name="T:Nessos.Vagabond.Extras">
+<summary>
+ Collection of extensions and utilities for use with Vagabond
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.Serialization">
+
+</member>
+<member name="M:Nessos.Vagabond.SliceCompiler.compileDynamicAssemblySlices(Microsoft.FSharp.Core.FSharpFunc{System.Reflection.Assembly,System.Boolean},System.Boolean,Nessos.Vagabond.SliceCompilerTypes.DynamicAssemblyCompilerState,Microsoft.FSharp.Collections.FSharpList{System.Reflection.Assembly})">
+<summary>
+ compiles a collection of assemblies
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.SliceCompiler.compileDynamicAssemblySlice(Nessos.Vagabond.SliceCompilerTypes.DynamicAssemblyCompilerState,Nessos.Vagabond.SliceCompilerTypes.DynamicAssemblyState,Microsoft.FSharp.Collections.FSharpMap{System.String,Nessos.Vagabond.AssemblyParser.TypeParseInfo},Mono.Cecil.AssemblyDefinition)">
+<summary>
+ compiles a slice of given dynamic assembly snapshot
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.SliceCompiler.initCompilerState(Microsoft.FSharp.Collections.FSharpList{Nessos.Vagabond.IDynamicAssemblyProfile},System.String)">
+<summary>
+ create an initial, empty compiler state
+</summary>
+</member>
+<member name="T:Nessos.Vagabond.SliceCompiler">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.SliceCompilerTypes">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.Utils.AssemblyIdGenerator">
+<summary>
+ computes a unique assembly identifier
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="P:Nessos.Vagabond.Utils.Exn`1.Value">
+<summary>
+ evaluate, re-raising the exception if failed
+</summary>
+</member>
+<member name="T:Nessos.Vagabond.Utils.Exn`1">
+<summary>
+ Value or exception
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Nessos.Vagabond.Utils.tryGetTopologicalOrdering``1(Microsoft.FSharp.Collections.FSharpList{System.Tuple{``0,Microsoft.FSharp.Collections.FSharpList{``0}}})">
+<summary>
+ Attempt to compute a topological sorting for graph if DAG,
+ If not DAG returns the reduced DAG for further debugging
+</summary>
+</member>
+<member name="M:Nessos.Vagabond.Utils.tryLoadAssembly(System.String)">
+<summary>
+ try get assembly loaded in appdomain or load it now
+</summary>
+</member>
+<member name="P:Nessos.Vagabond.Utils.tryGetLoadedAssembly">
+<summary>
+ try get assembly that is loaded in current appdomain
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:Nessos.Vagabond.Utils.Map.addMany``2(System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})">
+ <summary>
+     add multiple key-value pairs to map.
+ </summary>
+ <param name="kvs">Input key-value pairs.</param>
+ <param name="map">Input map.</param>
+</member>
+<member name="T:Nessos.Vagabond.Utils.Map">
+
+</member>
+<member name="M:Nessos.Vagabond.Utils.Convert.toBase32String(System.Byte[])">
+<summary>
+ convert bytes to base-32 string: useful for file names in case-insensitive file systems
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.Utils.Convert">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.Utils.Option">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:Nessos.Vagabond.Utils.Exn">
+
+</member>
+<member name="T:Nessos.Vagabond.Utils">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:System.AssemblyVersionInformation">
+
+</member>
+</members>
+</doc>
